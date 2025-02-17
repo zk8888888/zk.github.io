@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Penguin Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f7ffcc;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://media.giphy.com/media/bzXv6FIFNPNVvn226I/giphy.gif?cid=790b7611jhowoie1vmy6ibhvbmd65dnsmla79rru0yr5ubgr&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            position: relative;
+            height: 40vh;
+            background-image: url('https://media.giphy.com/media/SeaOY5l1B70ptfrTVk/giphy.gif?cid=ecf05e47ocvxvt8aqb3sc15924tw66tf9zcafnv6ik4lf8mf&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+            background-size: 100% 200%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 3.6em;
+            margin: 0;
+            animation: bounce 1s infinite;
+            color: #ffcc00;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        header .logo-left, header .logo-right {
+            position: absolute;
+            top: 50%;
+            width: 100px;
+            height: auto;
+            transform: translateY(-50%);
+        }
+        header .logo-left {
+            left: 10%;
+        }
+        header .logo-right {
+            right: 10%;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* 修改为透明色 */
+            border-radius: 10px;
+        }
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section .content {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .section {
+                flex-direction: row;
+            }
+            .section img, .section .content {
+                width: 45%;
+                margin-bottom: 0;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.png" alt="Binance Logo" class="logo-left">
+        <h1>CRAZY BN</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.png" alt="Binance Logo" class="logo-right">
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <img src="https://media.giphy.com/media/Ya7khgNdB7EYzRaPQg/giphy.gif" alt="Image 1">
+            <div class="content">
+                <h3>介绍 1</h3>
+                <p>这是第一个介绍内容。</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h3>资料 1</h3>
+                <p>这是第一个资料内容。</p>
+            </div>
+            <img src="https://media.giphy.com/media/SIvJ6EViTKzGbWu5o1/giphy.gif" alt="Image 2">
+        </div>
+        <div class="section">
+            <img src="https://media.giphy.com/media/wAnJlxR7gVF4jzIZ8x/giphy.gif" alt="Image 3">
+            <div class="content">
+                <h3>介绍 2</h3>
+                <p>这是第二个介绍内容。</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h3>资料 2</h3>
+                <p>这是第二个资料内容。</p>
+            </div>
+            <img src="https://media.giphy.com/media/F5epD9HL3OIav4ephh/giphy.gif" alt="Image 4">
+        </div>
+        <div class="section">
+            <img src="https://media.giphy.com/media/GO6mafNIYw5EegpfPq/giphy.gif" alt="Image 5">
+            <div class="content">
+                <h3>介绍 3</h3>
+                <p>这是第三个介绍内容。</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h3>资料 3</h3>
+                <p>这是第三个资料内容。</p>
+            </div>
+            <img src="https://media.giphy.com/media/xMdUELVjQDHAo0cmL9/giphy.gif?cid=ecf05e47erwk4wcialsfd4292ewkpg6q727msz2dx4ik1sxi&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Image 6">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CRAZY BN Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
